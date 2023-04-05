@@ -20,7 +20,7 @@ class StaticPagesURLTests(TestCase):
         response = self.guest_client.get('/')
         self.assertContains(response, 'У меня получилось!')
 
-        response = self.guest_client.get('/second_page/')
+        response = self.guest_client.get('/second/')
         self.assertContains(response, 'А это вторая страница')
 
     # def test_about_url_exists_at_desired_location(self):
